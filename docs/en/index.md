@@ -2,6 +2,31 @@
 
 Structured **dump and die** for Python scripts and CLIs. Stdlib only. No browser, no web framework required.
 
+<figure class="shot" markdown>
+![pydump terminal dump](../assets/images/pydump-dd-hero.jpg)
+<figcaption>Rich terminal trees — ANSI colors when stderr is a TTY</figcaption>
+</figure>
+
+## Stack
+
+Built for plain Python. Need HTML in the browser? Use [pydd](https://ardavanshamroshan.github.io/pydd/).
+
+<div class="grid cards fw-cards" markdown>
+
+-   [![Python](../assets/logos/python.svg){ .fw-logo }](getting-started.md)
+
+    **[Python / CLI](getting-started.md)**
+
+    Stdlib only — scripts, tests, CI
+
+-   [![pydd](../assets/images/pydd-logo-mark.png){ .fw-logo }](https://ardavanshamroshan.github.io/pydd/)
+
+    **[Need web? → pydd](https://ardavanshamroshan.github.io/pydd/)**
+
+    FastAPI · Flask · Django HTML dumps
+
+</div>
+
 <div class="grid cards" markdown>
 
 -   :material-download:{ .lg .middle } **Install**
@@ -41,25 +66,29 @@ Structured **dump and die** for Python scripts and CLIs. Stdlib only. No browser
 ## Quick example
 
 ```python
-import pydump  # installs dd/dump as builtins (Laravel-style)
+import pydump  # installs dd/dump as builtins
 
 user = {"id": 1, "name": "Ada", "roles": ["admin", "editor"]}
 dump(user)   # stderr, keep running
 dd(user)     # stderr, then exit 1
 ```
 
-## Preview
+## Live preview
 
-```text
-dict:3 [
-  "id" => 1
-  "name" => "Ada"
-  "roles" => list:2 [
-    0 => "admin"
-    1 => "editor"
-  ]
-] // main.py:5
-```
+<figure class="shot" markdown>
+![Terminal dump hero](../assets/images/pydump-dd-hero.jpg)
+<figcaption>Fully expanded trees — no collapse UI in the terminal</figcaption>
+</figure>
+
+<figure class="shot" markdown>
+![Dict dump panel](../assets/images/pydump-dd-panel.jpg)
+<figcaption>Typed header, nested lists, `// file:line` tip</figcaption>
+</figure>
+
+<figure class="shot" markdown>
+![Close-up dict dump](../assets/images/pydump-dd-dict-result.jpg)
+<figcaption>dict / list trees with syntax colors</figcaption>
+</figure>
 
 ## Need HTML / web frameworks?
 

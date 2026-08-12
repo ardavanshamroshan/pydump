@@ -1,5 +1,9 @@
 # pydump
 
+<p align="center">
+  <img src="docs/assets/images/logo-mark.png" width="96" alt="pydump" />
+</p>
+
 **Documentation:** [English](https://ardavanshamroshan.github.io/pydump/) · [فارسی](https://ardavanshamroshan.github.io/pydump/fa/)  
 **PyPI:** [pydump-dd](https://pypi.org/project/pydump-dd/) · **GitHub:** [ardavanshamroshan/pydump](https://github.com/ardavanshamroshan/pydump)
 
@@ -8,6 +12,14 @@ Structured **dump and die** for Python scripts and CLIs. Stdlib only. No browser
 Inspect dicts, lists, objects, and scalars in the terminal with readable trees, ANSI colors (when stderr is a TTY), and `// file:line` call-site tips.
 
 ## Preview
+
+<p align="center">
+  <img src="docs/assets/images/pydump-dd-hero.jpg" width="820" alt="pydump terminal dump" />
+</p>
+
+<p align="center">
+  <img src="docs/assets/images/pydump-dd-panel.jpg" width="720" alt="dict dump panel" />
+</p>
 
 ```text
 $ python debug.py
